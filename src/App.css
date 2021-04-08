@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: "paneuropa_neue_beta_1.1Rg";
+    src: url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff2")
+        format("woff2"),
+      url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
   }
-}
+  
+  @font-face {
+    font-family: "baskervillenormal";
+    src: url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff2")
+        format("woff2"),
+      url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: "paneuropa_neue_beta_1.1Rg";
+  }
+  
+  html {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  .topWrapper {
+    
+    padding: 0rem;
+    background: #bcbfb0;
+    color: #fffffc;
+    width: 700px;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    max-width: none;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.weekTimes {
+  height: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  
+  margin: 0.2rem
+}
+
+.timeLi {
+  height: 30px;
+  width: 40px;
+  padding: 0.2rem;
+  background: #fffffc;
+  color: #36382e;
+  margin: 0.2rem;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  list-style: none;
+}
+.info {
+  width: 90%;
+  font-size: 1.6rem;
+}
+
+.tabTitle {
+  color: #36382e;
+  text-transform: uppercase;
+  margin: 0.2rem;
+  font-size: 3rem;
+}
+
+.infoLine {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  margin: 0.4rem;
+  font-size: 1.2rem;
+  background: #36382e;
+  border-radius: 5px;
+  
+  padding: 0 2rem;
+  color:#fffffc
+}
+  input {
+    font-size: inherit;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+  }
+
+  #nameInput {
+    border-radius: 3px;
+  }
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: -2rem;
+    margin-top: 1rem
+  }
+
+  .topForm {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+.quote {
+  width: 90%;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  color:#fffffc
+}
+
+.delTab {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.sign {
+  margin-top: 0.5rem;
+  color: #36382e;
+  font-weight: bolder;
+}
+
+.hideBtn {
+  color:white;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  vertical-align: top;
+  
+}
+
+.lastWeek {
+    margin: 0.2rem;
+    font-size: 1.6rem
+}
+
+  .ulWrapper {
+    height: 90px;
+    margin-top: 0.5rem;
+  }
+
+  #todayLabel {
+    font-size: 1.8rem;
+  }
+
+.errorMsg {
+  text-align: center;
+  height: 30px;
+  font-size: 1.6rem;
+}
+
+.label {
+  font-size: 2rem;
+}
+
+
+
+  .tab {
+    height: auto;
+    width: 700px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #a5a58d;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+  .topTab {
+  
+    height: auto;
+      width: 700px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background: #a5a58d;
+      margin-bottom:-0.2rem;
+      margin-top: 1rem;
+      border-radius: 4px;
+      box-shadow: 10px 10px 5px grey;
+      
+  }
+
+  
+
+  button {
+    background: crimson;
+    padding: 0 0.3rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+    color: #fffffc;
+    font-size: 1.4rem
+  }
+
+  .tabsWrapper {
+    align-self: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto
+  }
+  
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  #outerCircle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2d3740;
+}
+
+#innerCircle {
+    width: 200px;
+    height: 200px;
+    background: #264653;
+    border-radius: 50%;
+}
+
+.progressCircleWrapper {
+   
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 1px;
+    bottom: 1px;
+    background-color: #777b65;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-  to {
-    transform: rotate(360deg);
+  
+  input:checked + .slider {
+    background-color: #cb997e;
   }
-}
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 10px;
+  }
+  
+  .slider.round:before {
+    border-radius: 40%;
+  }
