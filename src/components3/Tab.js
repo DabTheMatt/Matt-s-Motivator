@@ -28,7 +28,7 @@ class Tab extends React.Component {
   calcGoalL = () => {
     const completePercentL = this.props.totalTime / (this.props.goal / 100);
 
-    progressBcg = `conic-gradient(#0ad9ff ${completePercentL}%, #2d3740 ${completePercentL}% 100%)`;
+    progressBcg = `conic-gradient(#6d4722 ${completePercentL}%, #ba7a3b ${completePercentL}% 100%)`;
   };
 
   render() {
@@ -46,7 +46,24 @@ class Tab extends React.Component {
             >
               {this.props.visibility === "show" ? <div>hide</div> : <div>show</div>}
             </button>
+            
+              
+            
           </h2>
+          <div className="topCircleWrapper">
+          <div
+                id="outerCircleS"
+                style={{
+                  background: `conic-gradient(#4cc9f0 ${
+                    this.props.totalTime / (this.props.goal / 100)
+                  }%, #2d3740 ${
+                    this.props.totalTime / (this.props.goal / 100)
+                  }% 100%)`,
+                }}
+              >
+                <div id="innerCircleS"></div>
+              </div>
+              </div>
         </div>
         {this.props.visibility === "show" ? <div
           className="tab tabBody "
@@ -100,9 +117,9 @@ class Tab extends React.Component {
             </div>
             </div>
             <br />
-                  <div>
+                  <div className="rightWrapper">
                   <p className="weekGoal">
-              Your weekly goal:{" "}
+              Your weekly goal:{" "}<br/>
               {this.props.totalTime >= this.props.goal
                 ? `(${this.props.totalTime} hours) is complete!`
                 : `${this.props.totalTime} / ${this.props.goal}`}
@@ -112,7 +129,7 @@ class Tab extends React.Component {
               <div
                 id="outerCircle"
                 style={{
-                  background: `conic-gradient(#0ad9ff ${
+                  background: `conic-gradient(#4cc9f0 ${
                     this.props.totalTime / (this.props.goal / 100)
                   }%, #2d3740 ${
                     this.props.totalTime / (this.props.goal / 100)

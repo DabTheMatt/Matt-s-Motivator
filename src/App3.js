@@ -7,7 +7,7 @@ class App3 extends React.Component {
   state = {
     startId: 0,
     tasks: [],
-    bcgColors: ["ddbea9", "ffae70", "b7b7a4", "a5a58d", "cb997e", "b7094c", "a01a58", "892b64", "723c70", "5c4d7d", "455e89", "2e6f95", "1780a1", "0091ad"],
+    bcgColors: ["ccd5ae", "e9edc9", "fefae0", "faedcd" ],
     quote: "",
     author: "",
     dataF: [],

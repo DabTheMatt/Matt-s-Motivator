@@ -1,4 +1,9 @@
-
+:root {
+  --bcg: #a1b46a;
+  --lightColor: #ffffff;
+  --darkColor: #ffffff;
+  --btn: ;
+}
   
   * {
     font-family: "Lato", sans-serif;
@@ -7,16 +12,19 @@
   html {
     font-size: 16px;
     font-weight: 500;
+    
   }
   
 body {
   margin-bottom: 4rem;
+  width: 800px;
+  margin: 0 auto;
 }
 
   .topWrapper {
     
     padding: 0rem;
-    background: #bcbfb0;
+    background: var(--bcg);
     color: #fffffc;
     width: 700px;
     margin: 2rem auto;
@@ -24,7 +32,7 @@ body {
     padding-bottom: 3rem;
     border-radius: 5px;
     max-width: none;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 7px 7px grey;
   }
 
 .weekTimes {
@@ -36,7 +44,7 @@ body {
   flex-direction: row;
   margin: 0.4rem;
   font-size: 1.2rem;
-  background: #36382e;
+  background: var(--bcg);
   border-radius: 5px;
   
   padding: 0 1rem;
@@ -63,10 +71,15 @@ body {
   margin-bottom: 1rem;
 }
 
+.topCircleWrapper {
+  margin-right: 1rem;
+}
+
 .tabTitle {
   color: #36382e;
   text-transform: uppercase;
   margin: 0.2rem;
+  margin-left: 1rem;
   font-size: 3rem;
 }
 
@@ -79,7 +92,7 @@ body {
   flex-direction: row;
   margin: 0.4rem;
   font-size: 1.2rem;
-  background: #36382e;
+  background: var(--bcg);
   border-radius: 5px;
   
   padding: 0 1rem;
@@ -110,7 +123,12 @@ body {
   }
 
 .weekGoal {
+  width: 100%;
   font-size: 1.2rem;
+}
+
+.rightWrapper {
+  width: 100%;
 }
 
 .quote {
@@ -118,7 +136,7 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 1rem;
-  color:#fffffc
+  
 }
 
 
@@ -185,7 +203,7 @@ body {
     margin-bottom: 1rem;
     border-radius: 4px;
     position: relative;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 7px 7px grey;
   }
 
   .topTab {
@@ -193,22 +211,22 @@ body {
     height: auto;
       width: 700px;
       display:flex;
+
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       text-align: center;
-      flex-direction: column;
+      flex-direction: row;
       background: #a5a58d;
       margin-bottom:-0.2rem;
       margin-top: 1rem;
       border-radius: 4px;
-      box-shadow: 10px 10px 5px grey;
       
   }
 
   
 
   button {
-    background: crimson;
+    background: var(--bcg);
     padding: 0 0.3rem;
     margin-top: 1rem;
     border: none;
@@ -249,20 +267,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #2d3740;
+    background: #ba7a3b;
 }
 
 #innerCircle {
     width: 135px;
     height: 135px;
-    background: #264653;
+    background: #495057;
     border-radius: 50%;
+}
+
+#outerCircleS {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d3740;
+}
+
+#innerCircleS {
+  width: 32px;
+  height: 32px;
+  background: #495057;
+  border-radius: 50%;
 }
 
 .progressCircleWrapper {
    
   display: flex;
   justify-content: center;
+  flex-direction: row;
   
 }
   
