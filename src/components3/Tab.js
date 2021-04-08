@@ -44,7 +44,7 @@ class Tab extends React.Component {
               onClick={() => this.props.toggleHide(this.props.id)}
               className="hideBtn"
             >
-              hide
+              {this.props.visibility === "show" ? <div>hide</div> : <div>show</div>}
             </button>
           </h2>
         </div>
@@ -53,10 +53,14 @@ class Tab extends React.Component {
           style={{  background: `#${this.props.bcgColor}`}}
         >
           <div className="quote">
-            <i>{`"${this.props.quote}"`}</i>
+            <i className="quoteText">{`"${this.props.quote}"`}</i>
             <p className="sign">{this.props.author}</p>
           </div>
-          <form
+          
+          
+          <div className="info">
+            <div>
+            <form
             className="topForm"
             onSubmit={(e) =>
               this.handleSubmit(e, e.target.timeInput.value, this.props.id)
@@ -73,7 +77,7 @@ class Tab extends React.Component {
             <br />
             <button>Add</button>
           </form>
-          <div className="ulWrapper">
+            <div className="ulWrapper">
             <p className="lastWeek">Last week:</p>
             <ul className="weekTimes">
               {this.props.times.map((time) => (
@@ -82,7 +86,6 @@ class Tab extends React.Component {
               ))}
             </ul>
           </div>
-          <div className="info">
             <div className="infoLine">
               <p>Week total: </p>
               <span>{this.props.totalTime}</span>
@@ -95,8 +98,16 @@ class Tab extends React.Component {
               <p>Week high: </p>
               <span>{this.props.max}</span>
             </div>
+            </div>
             <br />
-
+                  <div>
+                  <p className="weekGoal">
+              Your weekly goal:{" "}
+              {this.props.totalTime >= this.props.goal
+                ? `(${this.props.totalTime} hours) is complete!`
+                : `${this.props.totalTime} / ${this.props.goal}`}
+              <br />
+            </p>
             <div className="progressCircleWrapper">
               <div
                 id="outerCircle"
@@ -111,19 +122,16 @@ class Tab extends React.Component {
                 <div id="innerCircle"></div>
               </div>
             </div>
-            <p>
-              Your weekly goal:{" "}
-              {this.props.totalTime >= this.props.goal
-                ? `(${this.props.totalTime} hours) is complete!`
-                : `${this.props.totalTime} / ${this.props.goal}`}
-              <br />
-            </p>
+            <div>
+            
             <button
               className="delTab"
               onClick={() => this.props.delTab(this.props.id)}
             >
               delete activity
             </button>
+            </div>
+          </div>
           </div>
         </div> : <div></div>}
         

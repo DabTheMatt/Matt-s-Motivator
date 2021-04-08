@@ -1,25 +1,7 @@
-@font-face {
-    font-family: "paneuropa_neue_beta_1.1Rg";
-    src: url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff2")
-        format("woff2"),
-      url("./asets/fonts/webfontkit-20201012-101627/paneuropaneueregular-webfont.woff")
-        format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "baskervillenormal";
-    src: url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff2")
-        format("woff2"),
-      url("./asets/fonts/webfontkit-20201014-140058/baskvl-webfont.woff")
-        format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
+
   
   * {
-    font-family: "paneuropa_neue_beta_1.1Rg";
+    font-family: "Lato", sans-serif;
   }
   
   html {
@@ -27,7 +9,9 @@
     font-weight: 500;
   }
   
-
+body {
+  margin-bottom: 4rem;
+}
 
   .topWrapper {
     
@@ -44,27 +28,39 @@
   }
 
 .weekTimes {
-  height: 30px;
+  height: 40px;
+  width: 350px;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
+  margin: 0.4rem;
+  font-size: 1.2rem;
+  background: #36382e;
+  border-radius: 5px;
   
-  margin: 0.2rem
+  padding: 0 1rem;
+  color:#fffffc
 }
 
 .timeLi {
-  height: 30px;
+  height: 28px;
   width: 40px;
   padding: 0.2rem;
   background: #fffffc;
   color: #36382e;
   margin: 0.2rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   border-radius: 3px;
   list-style: none;
 }
 .info {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
   width: 90%;
   font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .tabTitle {
@@ -76,6 +72,7 @@
 
 .infoLine {
   height: 40px;
+  width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +82,7 @@
   background: #36382e;
   border-radius: 5px;
   
-  padding: 0 2rem;
+  padding: 0 1rem;
   color:#fffffc
 }
   input {
@@ -112,18 +109,22 @@
     width: 100%;
   }
 
-
+.weekGoal {
+  font-size: 1.2rem;
+}
 
 .quote {
   width: 90%;
-  font-size: 1.6rem;
-  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: 400;
   margin-top: 1rem;
   color:#fffffc
 }
 
+
+
 .delTab {
-  margin-top: 0rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -131,11 +132,13 @@
   margin-top: 0.5rem;
   color: #36382e;
   font-weight: bolder;
+  align-self: flex-end;
 }
 
 .hideBtn {
   color:white;
   font-size: 1rem;
+  font-weight: 400;
   margin-left: 0.5rem;
   vertical-align: top;
   
@@ -147,6 +150,8 @@
 }
 
   .ulWrapper {
+    
+    width: 88%;
     height: 90px;
     margin-top: 0.5rem;
   }
@@ -238,8 +243,8 @@
   }
   
   #outerCircle {
-    width: 230px;
-    height: 230px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -248,8 +253,8 @@
 }
 
 #innerCircle {
-    width: 200px;
-    height: 200px;
+    width: 135px;
+    height: 135px;
     background: #264653;
     border-radius: 50%;
 }
