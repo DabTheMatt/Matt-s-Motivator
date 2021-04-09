@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TopForm from "./components3/TopForm";
 import Tab from "./components3/Tab";
 import "../src/App.css";
+import axios from "axios";
 
 class App3 extends React.Component {
   state = {
@@ -13,7 +14,13 @@ class App3 extends React.Component {
     dataF: [],
     errorMsgName: "",
     errorMsgGoal: "",
+    wheater: {},
+    joke: ""
   };
+
+  
+    
+ 
 
   componentDidMount() {
     const that = this;
@@ -34,6 +41,19 @@ class App3 extends React.Component {
           author: this.state.dataF[random].author,
         });
       });
+      this.takeJoke()
+      
+  }
+
+  takeJoke= ()=>{
+    const result = axios.get("https://api.chucknorris.io/jokes/random")
+      .then(res => {
+        const joke = res.data
+        console.log("joke", joke.value);
+        this.setState({
+          joke: joke.value
+        })
+      })
   }
 
   randomQuote = () => {
@@ -47,9 +67,9 @@ class App3 extends React.Component {
     console.log(this.state.quote);
   };
 
-  addTask = (name, goal) => {
+  addTask = (name, goal, serious) => {
     this.randomQuote();
-
+    this.takeJoke();
     this.setState({
       errorMsgGoal: "",
       errorMsgName: "",
@@ -78,7 +98,12 @@ class App3 extends React.Component {
       quote: this.state.quote,
       author: this.state.author,
       visibility: "show",
+      joke: this.state.joke,
+      seriuos: serious
     };
+
+    
+console.log("ser", task.seriuos);
     const tempTasks = [...this.state.tasks, task];
     tempTasks.reverse()
     this.setState({
@@ -163,6 +188,8 @@ class App3 extends React.Component {
         quote={task.quote}
         author={task.author}
         visibility={task.visibility}
+        seriuos={task.seriuos}
+        joke={task.joke}
       />
     ));
     return (

@@ -70,8 +70,14 @@ class Tab extends React.Component {
           style={{  background: `#${this.props.bcgColor}`}}
         >
           <div className="quote">
-            <i className="quoteText">{`"${this.props.quote}"`}</i>
-            <p className="sign">{this.props.author}</p>
+            {(this.props.seriuos === "false") ? 
+            
+            <div><i className="quoteText">{`"${this.props.quote}"`}</i>
+            <p className="sign">{this.props.author}</p></div> : 
+            <p>{this.props.joke}</p>
+            }
+            
+            
           </div>
           
           

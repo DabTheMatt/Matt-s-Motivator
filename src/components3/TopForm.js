@@ -6,7 +6,8 @@ class TopForm extends React.Component {
 
     state={
         tabName: "",
-        goal: ""
+        goal: "",
+        serious: "true"
     }
     
 
@@ -16,17 +17,32 @@ class TopForm extends React.Component {
         })
     }
 
+    handleSeriusChange = (e) => {
+        
+            if (this.state.serious === "true") {
+                this.setState({
+                    serious: "false"
+        })
+            } else {
+                this.setState({
+                    serious: "true"
+                })
+            }
+            
+        console.log("serious", this.state.serious);
+    }
+
     handleGoalChange = (e) => {
         this.setState({
             goal: e.target.value
         })
     }
 
-    handleSubmit(e, name, goal) {
+    handleSubmit(e, name, goal, serious) {
         e.preventDefault();
         console.log("sss");
 
-        this.props.addTask(name, goal);
+        this.props.addTask(name, goal, serious);
 
         this.setState({
             tabName: "",
@@ -39,8 +55,9 @@ class TopForm extends React.Component {
         return (
             <div className="topWrapper">
                 <h1>Matt's Motivator</h1><br/>
+                
 
-                <form className="topForm" onSubmit={e => this.handleSubmit(e, e.target.nameInput.value, e.target.goalInput.value)}>
+                <form className="topForm" onSubmit={e => this.handleSubmit(e, e.target.nameInput.value, e.target.goalInput.value, this.state.serious)}>
                     <label>Activity name:</label>
                     <br/>
                     <input
@@ -60,6 +77,14 @@ class TopForm extends React.Component {
                     id="goalInput"
                     onChange={this.handleGoalChange}
                     />
+                    <br/>
+                    <input
+                    type="checkbox"
+                    value="true"
+                    id="seriusInput"
+                    onChange={this.handleSeriusChange}
+                    />
+                    <div className="serious">Make it serious</div>
                     <br/>
                     <button>Add</button>
                 </form>
