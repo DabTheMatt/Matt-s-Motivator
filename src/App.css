@@ -325,7 +325,7 @@ button:active {
 
   .tab {
     height: auto;
-    width: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,14 +341,14 @@ button:active {
 
   .topTab {
     height: auto;
-    width: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
     flex-direction: row;
     background: #a5a58d;
-    margin: 1rem;
+    
     margin-bottom: -0.2rem;
     margin-top: 1rem;
     border-radius: 2px;
@@ -368,21 +368,24 @@ button:active {
   .topWrapper {
     background: var(--bcg);
     color: #fffffc;
-    width: 500px;
-    margin: 2rem auto;
+    width: 100%;
+    margin: auto;
     margin-bottom: -1rem;
+    
     padding-bottom: 3rem;
-    border-radius: 5px;
+    
+    border-radius: 2px;
     max-width: none;
   }
 
   .topForm {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: center;
     width: 100%;
     margin-top: 0rem;
     color: #52b788;
+    margin-left: -1rem;
   }
 
   .lastWeek {
@@ -439,14 +442,14 @@ button:active {
     margin: 0.4rem;
     font-size: 1.2rem;
     background: var(--bcg);
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 0 1rem;
     color: #fffffc;
   }
 
   #outerCircle {
-    width: 380px;
-    height: 380px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -455,8 +458,8 @@ button:active {
   }
   
   #innerCircle {
-    width: 285px;
-    height: 285px;
+    width: 240px;
+    height: 240px;
     background: #495057;
     border-radius: 50%;
   }
@@ -470,4 +473,42 @@ button:active {
     text-align: center;
     
   }
+
+  body {
+    margin-bottom: 4rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tabWrapper {
+    width: 90%;
+    margin-left: -1rem;
+  }
+
+  .about {
+    margin-left: -1rem;
+  }
+
+  h1 {
+margin-left: -1rem;  }
+
+.tabsWrapper {
+  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: -2rem;
+}
+
+.serious {
+  font-size: 1.6rem;
+}
+
+#seriusInput {
+  font-size: 2rem;
+}
 }
