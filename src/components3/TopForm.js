@@ -55,6 +55,13 @@ class TopForm extends React.Component {
         return (
             <div className="topWrapper">
                 <h1>Matt's Motivator</h1><br/>
+                <p className="about">Probably each of us suffers (to a greater or lesser extent) from a condition called laziness.
+
+Laziness is not a bad thing if we are not preparing for a test or we have not promised ourselves that we will exercise every day.
+
+Matt's Motivator is designed to help you overcome laziness and get you to work.
+
+You can do it in a more or less serious way, accompanied by jokes about Chuck Norris, or serious quotes from other smart (but not so smart, of course) people.</p>
                 
 
                 <form className="topForm" onSubmit={e => this.handleSubmit(e, e.target.nameInput.value, e.target.goalInput.value, this.state.serious)}>
@@ -85,11 +92,12 @@ class TopForm extends React.Component {
                     onChange={this.handleSeriusChange}
                     />
                     <div className="serious">Make it serious</div>
-                    <br/>
-                    <button>Add</button>
-                </form>
-                <div className="errorMsg">{this.props.errorMsgName}
+                    
+                    <div className="errorMsg">{this.props.errorMsgName}
                 {this.props.errorMsgGoal}</div>
+                    <button className="mainBtn">Add</button>
+                </form>
+                
                 
             </div>
         );

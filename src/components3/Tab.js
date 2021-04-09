@@ -54,7 +54,7 @@ class Tab extends React.Component {
           <div
                 id="outerCircleS"
                 style={{
-                  background: `conic-gradient(#4cc9f0 ${
+                  background: `conic-gradient(#f865b0 ${
                     this.props.totalTime / (this.props.goal / 100)
                   }%, #2d3740 ${
                     this.props.totalTime / (this.props.goal / 100)
@@ -135,7 +135,7 @@ class Tab extends React.Component {
               <div
                 id="outerCircle"
                 style={{
-                  background: `conic-gradient(#4cc9f0 ${
+                  background: `conic-gradient(#f865b0 ${
                     this.props.totalTime / (this.props.goal / 100)
                   }%, #2d3740 ${
                     this.props.totalTime / (this.props.goal / 100)

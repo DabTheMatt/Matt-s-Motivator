@@ -1,8 +1,8 @@
 :root {
-  --bcg: #a1b46a;
+  --bcg: black;
   --lightColor: #ffffff;
   --darkColor: #ffffff;
-  --btn: ;
+  --btn: red;
 }
   
   * {
@@ -12,6 +12,7 @@
   html {
     font-size: 16px;
     font-weight: 500;
+    background: var(--bcg);
     
   }
   
@@ -23,16 +24,14 @@ body {
 
   .topWrapper {
     
-    padding: 0rem;
     background: var(--bcg);
     color: #fffffc;
     width: 700px;
     margin: 2rem auto;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     padding-bottom: 3rem;
     border-radius: 5px;
     max-width: none;
-    box-shadow: 7px 7px grey;
   }
 
 .weekTimes {
@@ -106,28 +105,38 @@ body {
     font-size: inherit;
     text-align: center;
     border: none;
-    border-radius: 3px;
   }
 
   #nameInput {
-    border-radius: 3px;
   }
 
   #timeInput {
+    margin-top: 0.5rem;
     width: 30%;
   }
 
+  .about {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
   h1 {
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: -2rem;
-    margin-top: 1rem
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: -1rem;
+    margin-top: 5rem;
+    color: #52b788;
+    
   }
 
   .topForm {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
     width: 100%;
+    margin-top: 0rem;
+    color: #52b788;
   }
 
 .weekGoal {
@@ -183,17 +192,49 @@ body {
   }
 
   #todayLabel {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: black;
   }
 
 .errorMsg {
-  text-align: center;
+  text-align: left;
   height: 30px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0rem;
+  color: var(--btn)
 }
 
+
+
+button {
+  padding: 5px 5px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #52b788;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 3px 3px #999;
+  margin-top: 0.5rem;
+}
+
+button:hover {background-color: #40916c}
+
+button:active {
+  background-color: #40916c;
+  box-shadow: none;
+  transform: tr}
+
+
+
 .label {
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  
 }
 
 
@@ -209,7 +250,7 @@ body {
     background: #a5a58d;
     margin: 1rem;
     margin-bottom: 1rem;
-    border-radius: 4px;
+    border-radius: 2px;
     position: relative;
     box-shadow: 7px 7px grey;
   }
@@ -227,21 +268,13 @@ body {
       background: #a5a58d;
       margin-bottom:-0.2rem;
       margin-top: 1rem;
-      border-radius: 4px;
+      border-radius: 2px;
       
   }
 
   
 
-  button {
-    background: var(--bcg);
-    padding: 0 0.3rem;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 4px;
-    color: #fffffc;
-    font-size: 1.4rem
-  }
+ 
 
   .tabsWrapper {
     align-self: center;

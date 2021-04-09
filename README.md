@@ -11,6 +11,7 @@ You can do it in a more or less serious way, accompanied by jokes about Chuck No
 --------
 
 Chyba każdy z nas cierpi (w mniejszym lub większym stopniu) na przypadłość zwaną lenistwem. 
+
 Lenistwo nie jest niczym złym, jeżeli akurat nie przygotowujemy się do sprawdzianu, albo nie obiecaliśmy sobie, że będziemy codziennie ćwiczyć.
 
 Matt’S Motivator ma pomóc Ci w pokonaniu lenistwa i zmobilizować Cię do pracy.
