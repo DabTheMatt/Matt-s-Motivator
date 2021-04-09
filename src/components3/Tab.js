@@ -27,6 +27,7 @@ class Tab extends React.Component {
 
   calcGoalL = () => {
     const completePercentL = this.props.totalTime / (this.props.goal / 100);
+    
 
     progressBcg = `conic-gradient(#6d4722 ${completePercentL}%, #ba7a3b ${completePercentL}% 100%)`;
   };
@@ -35,7 +36,7 @@ class Tab extends React.Component {
     return (
       <div className="tabWrapper animate__animated animate__fadeIn">
         <div
-          className="tab topTab"
+          className=" topTab"
           style={{ background: `#${this.props.bcgColor}` }}
         >
           <h2 className="tabTitle">
@@ -74,7 +75,7 @@ class Tab extends React.Component {
             
             <div><i className="quoteText">{`"${this.props.quote}"`}</i>
             <p className="sign">{this.props.author}</p></div> : 
-            <p>{this.props.joke}</p>
+            <div><i className="quoteText">{this.props.joke}</i><br/><br/></div>
             }
             
             
@@ -82,7 +83,7 @@ class Tab extends React.Component {
           
           
           <div className="info">
-            <div>
+            <div className="full">
             <form
             className="topForm"
             onSubmit={(e) =>

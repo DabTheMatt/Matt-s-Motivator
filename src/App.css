@@ -4,35 +4,33 @@
   --darkColor: #ffffff;
   --btn: red;
 }
-  
-  * {
-    font-family: "Lato", sans-serif;
-  }
-  
-  html {
-    font-size: 16px;
-    font-weight: 500;
-    background: var(--bcg);
-    
-  }
-  
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--bcg);
+}
+
 body {
   margin-bottom: 4rem;
   width: 800px;
   margin: 0 auto;
 }
 
-  .topWrapper {
-    
-    background: var(--bcg);
-    color: #fffffc;
-    width: 700px;
-    margin: 2rem auto;
-    margin-bottom: -1rem;
-    padding-bottom: 3rem;
-    border-radius: 5px;
-    max-width: none;
-  }
+.topWrapper {
+  background: var(--bcg);
+  color: #fffffc;
+  width: 700px;
+  margin: 2rem auto;
+  margin-bottom: -1rem;
+  padding-bottom: 3rem;
+  border-radius: 5px;
+  max-width: none;
+}
 
 .weekTimes {
   height: 40px;
@@ -45,9 +43,9 @@ body {
   font-size: 1.2rem;
   background: var(--bcg);
   border-radius: 5px;
-  
+
   padding: 0 1rem;
-  color:#fffffc
+  color: #fffffc;
 }
 
 .timeLi {
@@ -62,7 +60,7 @@ body {
   list-style: none;
 }
 .info {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
@@ -97,47 +95,46 @@ body {
   font-size: 1.2rem;
   background: var(--bcg);
   border-radius: 5px;
-  
+
   padding: 0 1rem;
-  color:#fffffc
+  color: #fffffc;
 }
-  input {
-    font-size: inherit;
-    text-align: center;
-    border: none;
-  }
+input {
+  font-size: inherit;
+  text-align: center;
+  border: none;
+}
 
-  #nameInput {
-  }
+#nameInput {
+}
 
-  #timeInput {
-    margin-top: 0.5rem;
-    width: 30%;
-  }
+#timeInput {
+  margin-top: 0.5rem;
+  width: 30%;
+}
 
-  .about {
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
+.about {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 
-  h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: -1rem;
-    margin-top: 5rem;
-    color: #52b788;
-    
-  }
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: -1rem;
+  margin-top: 5rem;
+  color: #52b788;
+}
 
-  .topForm {
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-align: left;
-    width: 100%;
-    margin-top: 0rem;
-    color: #52b788;
-  }
+.topForm {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+  margin-top: 0rem;
+  color: #52b788;
+}
 
 .weekGoal {
   width: 100%;
@@ -153,10 +150,7 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 1rem;
-  
 }
-
-
 
 .delTab {
   margin-top: 3rem;
@@ -171,31 +165,29 @@ body {
 }
 
 .hideBtn {
-  color:white;
+  color: white;
   font-size: 1rem;
   font-weight: 400;
   margin-left: 0.5rem;
   vertical-align: top;
-  
 }
 
 .lastWeek {
-    margin: 0.2rem;
-    font-size: 1.6rem
+  margin: 0.2rem;
+  font-size: 1.6rem;
 }
 
-  .ulWrapper {
-    
-    width: 88%;
-    height: 90px;
-    margin-top: 0.5rem;
-  }
+.ulWrapper {
+  width: 88%;
+  height: 90px;
+  margin-top: 0.5rem;
+}
 
-  #todayLabel {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: black;
-  }
+#todayLabel {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
 
 .errorMsg {
   text-align: left;
@@ -203,10 +195,8 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: 0rem;
-  color: var(--btn)
+  color: var(--btn);
 }
-
-
 
 button {
   padding: 5px 5px;
@@ -222,100 +212,81 @@ button {
   margin-top: 0.5rem;
 }
 
-button:hover {background-color: #40916c}
+button:hover {
+  background-color: #40916c;
+}
 
 button:active {
   background-color: #40916c;
   box-shadow: none;
-  transform: tr}
-
-
+  transform: tr;
+}
 
 .label {
   font-size: 1rem;
   font-weight: 300;
-  
 }
 
+.tab {
+  height: auto;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background: #a5a58d;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 7px 7px grey;
+}
 
-
-  .tab {
-    height: auto;
-    width: 700px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    background: #a5a58d;
-    margin: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 2px;
-    position: relative;
-    box-shadow: 7px 7px grey;
-  }
-
-  .topTab {
-  
-    height: auto;
-      width: 700px;
-      display:flex;
-
-      align-items: center;
-      justify-content: space-between;
-      text-align: center;
-      flex-direction: row;
-      background: #a5a58d;
-      margin-bottom:-0.2rem;
-      margin-top: 1rem;
-      border-radius: 2px;
-      
-  }
-
+.topTab {
+  height: auto;
+  width: 700px;
+  display: flex;
   
 
- 
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: row;
+  background: #a5a58d;
+  margin: 1rem;
+  margin-bottom: -0.2rem;
+  margin-top: 1rem;
+  border-radius: 2px;
+  box-shadow: 7px 7px grey;
+}
 
-  .tabsWrapper {
-    align-self: center;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 0rem;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto
-  }
-  
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  #outerCircle {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ba7a3b;
+.tabsWrapper {
+  align-self: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 0rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#outerCircle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ba7a3b;
 }
 
 #innerCircle {
-    width: 135px;
-    height: 135px;
-    background: #495057;
-    border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  background: #495057;
+  border-radius: 50%;
 }
 
 #outerCircleS {
@@ -336,44 +307,167 @@ button:active {
 }
 
 .progressCircleWrapper {
-   
   display: flex;
   justify-content: center;
   flex-direction: row;
-  
 }
+
+.percent {
+  color:#fffffc;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+
   
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 1px;
-    bottom: 1px;
-    background-color: #777b65;
-    -webkit-transition: .4s;
-    transition: .4s;
+
+  .tab {
+    height: auto;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #a5a58d;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 7px 7px grey;
+  }
+
+  .topTab {
+    height: auto;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    background: #a5a58d;
+    margin: 1rem;
+    margin-bottom: -0.2rem;
+    margin-top: 1rem;
+    border-radius: 2px;
+    box-shadow: 7px 7px grey;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .topWrapper {
+    background: var(--bcg);
+    color: #fffffc;
+    width: 500px;
+    margin: 2rem auto;
+    margin-bottom: -1rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    max-width: none;
+  }
+
+  .topForm {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    margin-top: 0rem;
+    color: #52b788;
+  }
+
+  .lastWeek {
+    width: 100%;
+    margin: 0.2rem ;
+
+    font-size: 1.6rem;
+  }
+
+  .ulWrapper {
+    width: 100%;
+    height: 90px;
+    margin-top: 0.5rem;
+    align-self: center;
+  }
+
+  .infoLine {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0.4rem;
+    font-size: 2rem;
+    background: var(--bcg);
+    border-radius: 2px;
+  
+    padding: 1 1rem;
+    color: #fffffc;
+  }
+
+  .full {
+    width: 90%;
+    margin-left: -2.5rem;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .weekTimes {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    background: var(--bcg);
+    border-radius: 5px;
+    padding: 0 1rem;
+    color: #fffffc;
+  }
+
+  #outerCircle {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ba7a3b;
   }
   
-  input:checked + .slider {
-    background-color: #cb997e;
+  #innerCircle {
+    width: 285px;
+    height: 285px;
+    background: #495057;
+    border-radius: 50%;
   }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+
+  .weekGoal {
+    width: 100%;
+    font-size: 2rem;
   }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+
+  .errorMsg {
+    text-align: center;
+    
   }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 10px;
-  }
-  
-  .slider.round:before {
-    border-radius: 40%;
-  }
+}
