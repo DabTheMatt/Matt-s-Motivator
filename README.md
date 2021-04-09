@@ -1,4 +1,4 @@
-# Activator
+# Matt's Motivator
 
 Probably each of us suffers (to a greater or lesser extent) from a condition called laziness.
 
