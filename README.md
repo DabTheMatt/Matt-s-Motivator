@@ -1,6 +1,6 @@
 # Matt's Motivator
 
-https://dabthematt.github.io/activator/
+https://dabthematt.github.io/Matt-s-Motivator/
 
 Probably each of us suffers (to a greater or lesser extent) from a condition called laziness.
 
@@ -12,7 +12,7 @@ You can do it in a more or less serious way, accompanied by jokes about Chuck No
 
 --------
 
-https://dabthematt.github.io/activator/
+https://dabthematt.github.io/Matt-s-Motivator/
 
 Chyba każdy z nas cierpi (w mniejszym lub większym stopniu) na przypadłość zwaną lenistwem. 
 
