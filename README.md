@@ -1,5 +1,7 @@
 # Matt's Motivator
 
+https://dabthematt.github.io/activator/
+
 Probably each of us suffers (to a greater or lesser extent) from a condition called laziness.
 
 Laziness is not a bad thing if we are not preparing for a test or we have not promised ourselves that we will exercise every day.
@@ -9,6 +11,8 @@ Matt's Motivator is designed to help you overcome laziness and get you to work.
 You can do it in a more or less serious way, accompanied by jokes about Chuck Norris, or serious quotes from other smart (but not so smart, of course) people.
 
 --------
+
+https://dabthematt.github.io/activator/
 
 Chyba każdy z nas cierpi (w mniejszym lub większym stopniu) na przypadłość zwaną lenistwem. 
 
